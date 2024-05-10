@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bk"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/loginHeader"
+            android:text="Đăng Nhập"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputUsername"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <EditText
+                android:id="@+id/edtUsername"
+                style="@style/modifiedEditText"
+                android:hint="Tên đăng nhập..."
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:text="test"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/modifiedEditText"
+                android:hint="Mật khẩu..."
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:text="123456"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/parent"
+            android:id="@+id/tvError"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:text="Vui lòng nhập thông tin đăng nhập!"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <TextView
+            style="@style/parent"
+            android:id="@+id/btnForgotPass"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:text="Quên mật khẩu?"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <Button
+            style="@style/loginButton"
+            android:id="@+id/btnSubmit"
+            android:text="Đăng Nhập"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <TextView
+            style="@style/parent"
+            android:id="@+id/btnRegister"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:text="Bạn chưa có tài khoản? Đăng ký ngay tại đây!"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_gravity="bottom"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:progressTint="#FF0000"
+        android:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

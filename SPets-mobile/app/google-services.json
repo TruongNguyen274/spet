@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "584570679946",
+    "project_id": "spets-49212",
+    "storage_bucket": "spets-49212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584570679946:android:48d9a39975b9f13d263373",
+        "android_client_info": {
+          "package_name": "com.example.spetsmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVXgv7-XjXXwCm45U4q2yhbgnrR5YeXUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
